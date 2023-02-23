@@ -10,7 +10,7 @@ A bit of data cleaning is also done using MATLAB to achieve required result.
 
 # BEFORE RUNNING SCRIPT READ THIS:
 
-The script can run only when the excel file (Routing_GitHub.xlsx) is used. The values and the size of the table can be changed, but the name of the columns should not be changed if the script is to run as it is. If the column names are changed the respective table variables need to be changed in the script
+The script can run only when the excel file (Routing_GitHub.xlsx) is used. The values and the content of the table can be changed, but the name of the columns should not be changed if the script is to run as it is. If the column names are changed the respective table variables need to be changed in the script
 
 The origin co-ordinate has to be inputted in the script. Currntly it contains a dummy value (Line 98 of the MATLAB script.)
 
