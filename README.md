@@ -2,8 +2,11 @@
 
 WHAT DOES THE SCRIPT DO?
 
-It uses the information from the excel sheet (see Routing_GitHub.xlsx) to create a routing list. It takes into account the distance as well as the load carried by the vehicle. This can be changed by inputting desired value in line #35 of the script (change the value of variable 'limit_case'). A bit of data cleaning is also done using MATLAB to achieve required result.
+It uses the information from the excel sheet (see Routing_GitHub.xlsx) to create a routing list. It takes into account the distance as well as the load carried by the vehicle. This can be changed by inputting desired value in line #35 of the script (change the value of variable 'limit_case'). The default value chosen was 800. 
 
+If the load exceeds 800, the script splits it and moves it into a different truck/vehicle while updating the value in the table. The script runs until all the cases of all the stops are used
+
+A bit of data cleaning is also done using MATLAB to achieve required result.
 
 BEFORE RUNNING SCRIPT READ THIS:
 
@@ -15,7 +18,7 @@ The current excel sheet does not contain any latitudes and longitudes and need t
 
 The script uses Latitude and Longitude to calculate the distance between two places. But the in-built function used for this calculated the straight line distance and not the actual distance between places by road.
 
-OUTPUT FILE
+ABOUT OUTPUT FILE:
 
-An output file has also been posted on the page. 
+An output file has also been posted. 
 
