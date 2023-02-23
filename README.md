@@ -20,5 +20,5 @@ The script uses Latitude and Longitude to calculate the distance between two pla
 
 ABOUT OUTPUT FILE:
 
-An output file has also been posted. 
+An output file has also been posted. All the distances are in km's.
 
