@@ -227,20 +227,30 @@ while check_zero(S2.Cases) && check_zero(Kdist.Cases)
 
         l_temp = l_temp + S2.Cases(idx1);
 
-        if l_temp >= limit_case 
+        if v >= dist_limit && v > Kdist.Orig(idx)
 
+                 l_temp = 0;
+    
+                RR.CusName(i) = "NEXT TRUCK";
+                RR.ShipCity(i) = "NEXT TRUCK";
+                RR.Cases(i) = 0;
+                RR.Orig(i) = 0;
+
+        
+        elseif l_temp >= limit_case 
+    
             RR.CusName(i) = S2.CusName(idx1);
             RR.ShipCity(i) = S2.ShipCity(idx1);
             RR.Cases(i) =  S2.Cases(idx1) - (l_temp - limit_case);
             RR.Orig(i) =  v;
-
-            Kdist.Cases(idx) = S2.Cases(idx1) - RR.Cases(i);
+    
+            Kdist.Cases(idx) = S2.Cases(idx1) - limit_case;
             S2.Cases(idx1) = Kdist.Cases(idx);
-
+    
             l_temp = 0;
-
+    
             i = i+1;
-
+    
             RR.CusName(i) = "NEXT TRUCK";
             RR.ShipCity(i) = "NEXT TRUCK";
             RR.Cases(i) = 0;
@@ -301,11 +311,6 @@ function [output] = check_zero(matrix_column)
     end
 
 end
-
-
-
-
-
 
 
 
