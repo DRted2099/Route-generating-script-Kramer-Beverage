@@ -58,7 +58,7 @@ def split_cases(casesToBeDel, cases_on_truck, case_limit):
 		+  (casesToBeDel, 0) * (not condition)
 
 		
-''' Initializing variables and empty lists to store distances and indices '''
+# Initializing variables and empty lists to store distances and indices
 
 dist = list()			# To store the distance between stops
 ind_route = list()		# To store the order of indices for the route ie; order of delivery
@@ -71,7 +71,7 @@ case_limit = 800  # Maximum cases a truck can fit
 
 kramer = [39.616910, -74.818310] #Origin co-ordinates
 
-'''Reading lat and lon data from csv file '''
+# Reading lat and lon data from .csv file
 
 cord_cases = {'Index': [], 'Latitude': [], 'Longitude': [], 'Cases': [] }
 
