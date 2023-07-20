@@ -11,6 +11,7 @@ A bit of data cleaning is also done using MATLAB to achieve required result.
 PYTHON SCRIPT (NEW):
 
 The functionality of the script remains except for two changes.
+
 Change 1: The script takes in a .csv file instead of an Excel file. So, while running the Python script, convert the .xlsx file to a .csv file wherever a file is read in the script.
 
 Change 2: The script also considers negative values under the "Cases" column. The negative number of cases represents a pickup rather than a delivery at that stop.
