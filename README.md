@@ -2,7 +2,7 @@
 
 # WHAT DOES THE SCRIPT DO?
 
-It uses the information from the excel sheet as a input (see Routing_GitHub.xlsx) to create a routing list. It takes into account the distance as well as the load carried by the vehicle. This can be changed by inputting desired value in line #35 of the script (change the value of variable 'limit_case'). The default value chosen was 800 cases. 
+It uses the information from the excel sheet as input (see Routing_GitHub.xlsx) to create a routing list. It takes into account the distance as well as the load carried by the vehicle. This can be changed by inputting desired value in line #35 of the script (change the value of variable 'limit_case'). The default value chosen was 800 cases. 
 
 If the load of the truck exceeds the limit (limit_case), a route is created. In case the load is not perfectly allocated (as in current load is 790 and the next stop has 150 cases), the script splits it accordingly and updates the values. The program runs until all the values under the 'Cases' column become 0 in the table.
 
