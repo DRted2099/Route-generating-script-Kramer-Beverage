@@ -8,18 +8,18 @@ If the load of the truck exceeds the limit (limit_case), a route is created. In 
 
 A bit of data cleaning is also done using MATLAB to achieve required result.
 
-PYTHON SCRIPT (NEW):
+## PYTHON SCRIPT (NEW):
 
-The functionality of the script remains except for two changes.
+The functionality of the script remains the same except for two changes.
 
-Change 1: The script takes in a .csv file instead of an Excel file. So, while running the Python script, convert the .xlsx file to a .csv file wherever a file is read in the script.
+**Change 1**: The script takes in a .csv file instead of an Excel file. So, while running the Python script, convert the .xlsx file to a .csv file wherever a file is read in the script.
 
-Change 2: The script also considers negative values under the "Cases" column. The negative number of cases represents a pickup rather than a delivery at that stop.
+**Change 2**: The script also considers negative values under the "Cases" column. The negative number of cases represents a pickup rather than a delivery at that stop.
 
 # BEFORE RUNNING THE SCRIPT, READ THIS:
 
-MATLAB:
-CHANGE THE FILE PATH in line #29.
+## MATLAB:
+**CHANGE THE FILE PATH in line #29.**
 
 The script can run only when the excel file (Routing_GitHub.xlsx) is used. The values and the content of the table can be changed, but the name of the columns should not be changed if the script is to run as it is. If the column names are changed the respective table variables need to be changed in the script.
 
